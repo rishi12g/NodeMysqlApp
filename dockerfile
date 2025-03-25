@@ -17,7 +17,7 @@ RUN npm ci --only=production  # Bundle app source
 COPY . .
 
 # Build the application (if required)
-RUN npm run build
+#RUN npm run build
 
 # Run app
 CMD ["npm", "start"]
