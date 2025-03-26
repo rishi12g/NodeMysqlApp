@@ -16,6 +16,9 @@ RUN npm ci --only=production  # Bundle app source
 # Copy the rest of the application
 COPY . .
 
+# Bind to port 8080
+EXPOSE 8282
+
 # Build the application (if required)
 #RUN npm run build
 
